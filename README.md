@@ -1,0 +1,2 @@
+"# PRODUCT-MANAGEMENT-SYSTEM" 
+This project is a comprehensive CRUD system designed to manage data through Create, Read, Update, and Delete operations. It provides a versatile solution for handling various types of data with a user-friendly interface, making it an ideal foundation for building applications that require basic database functionality.

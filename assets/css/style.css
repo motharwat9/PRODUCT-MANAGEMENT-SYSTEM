@@ -1,0 +1,186 @@
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+  }
+  .container {
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
+  /* Start head */
+  .container .head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+  }
+  .container .head h2 span {
+    color: #09c;
+  }
+  /* End head */
+  /* Start Form */
+
+  form > input,
+  .output .searchBlock > input {
+    background-color: #111;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+form input::placeholder,
+.output .searchBlock > input::placeholder {
+  color: #09c;
+}
+form input:focus,
+.output .searchBlock > input:focus {
+  background-color: black;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+form .prices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
+  column-gap: 10px;
+}
+form .prices span {
+  background-color: #09c;
+  display: block;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px 0px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+form .prices span::before {
+  content: "Total : ";
+}
+form .prices input {
+  background-color: #111;
+  color: white;
+  padding: 5px;
+  margin: 5px 0px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+  button {
+  background-color: #09c;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+  button:hover {
+  background-color: rgb(144, 221, 247);
+  letter-spacing: 0.2px;
+}
+  /* End Form */
+  
+  /* Start output */
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.btnSearch button{
+  width: 45%; 
+}
+#clear {
+  display:none;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+
+}
+@media (max-width:767px){
+  table tr {
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(auto-fit , minmax(40px , 1fr));
+    font-size: 10px;
+    text-transform: lowercase;
+    align-items: center;
+  }
+}
+table tr th{
+  background-color: antiquewhite;
+  color: #111;
+}
+th ,td {
+  padding: 1px;
+  margin: 1px ;
+}
+  /* End output */
